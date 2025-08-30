@@ -1,8 +1,5 @@
-import React from "react";
 import { useCart } from "../../context/cartContext";
-import { ProductCard } from "../../components/ProductCard";
-import { Navbar } from "../../components/Navbar";
-import { PriceDetails } from "../../components/PriceDetails";
+import { ProductCard, Navbar, PriceDetails} from "../../components/index";
 
 export const Cart = () => {
   const { cart } = useCart();

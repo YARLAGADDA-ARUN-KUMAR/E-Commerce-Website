@@ -1,10 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { Cart } from "./pages/Cart";
-import { Whislist } from "./pages/Whislist";
-import { AuthLogin } from "./pages/AuthLogin";
+import { Home, AuthLogin, Cart, Whislist } from "./pages/index"
 
 function App() {
   return (

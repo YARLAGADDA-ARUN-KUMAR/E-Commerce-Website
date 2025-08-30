@@ -1,8 +1,7 @@
-import { Navbar } from "../../components/Navbar";
+import { Navbar,ProductCard } from "../../components/index";
 import { getAllProducts } from "../../api/getAllProducts";
 import { getAllCategories } from "../../api/getAllcategories";
 import { useEffect, useState } from "react";
-import { ProductCard } from "../../components/ProductCard";
 
 export const Home = () => {
   const [products, setProducts] = useState([]);

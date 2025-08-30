@@ -1,7 +1,5 @@
-import React from "react";
 import { useCart } from "../../context/cartContext";
-import { ProductCard } from "../../components/ProductCard";
-import { Navbar } from "../../components/Navbar";
+import { ProductCard, Navbar } from "../../components/index"
 
 export const Whislist = () => {
   const { fav } = useCart();

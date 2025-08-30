@@ -1,5 +1,4 @@
-import { LoginForm } from "../../components/Login"
-import { Navbar } from "../../components/Navbar"
+import { LoginForm, Navbar } from "../../components/index";
 
 export const AuthLogin = () => {
     return (
