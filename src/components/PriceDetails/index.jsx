@@ -9,7 +9,6 @@ export const PriceDetails = () => {
   );
 
   const deliveryCharge = subtotal > 0 ? 7.0 : 0;
-
   const totalAmount = subtotal + deliveryCharge;
 
   return (

@@ -8,6 +8,14 @@ export const cartReducer = (state, {type,payload}) => {
             ...state,
             cart: state.cart.filter(product => product.id !== payload.product.id),
         };
+        case "ADD_TO_WISHLIST": return {
+            ...state,
+            fav: [...state.fav,payload.product],
+        };
+        case "REMOVE_FROM_WISHLIST": return {
+            ...state,
+            fav: state.fav.filter(product => product.id !== payload.product.id),
+        };
         default: return state;
     }
 }
