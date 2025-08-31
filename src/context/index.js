@@ -1,4 +1,6 @@
-import { CartProvider, useCart } from "./cartContext";
-import { LoginProvider, useLogin } from "./loginContext";
+import { CartProvider } from "./cartContext";
+import { useCart } from "../hooks/useCart";
+import { LoginProvider } from "./loginContext";
+import { useLogin } from "../hooks/useLogin";
 
-export { CartProvider, useCart , LoginProvider, useLogin };
+export { CartProvider, useCart, LoginProvider, useLogin };

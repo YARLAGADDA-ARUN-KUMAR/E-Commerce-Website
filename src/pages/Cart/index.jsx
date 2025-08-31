@@ -1,7 +1,7 @@
-import { useCart } from "../../context/cartContext";
+import { useCart } from "../../hooks/useCart";
 import { ProductCard, Navbar, PriceDetails} from "../../components/index";
 
-export const Cart = () => {
+export default function Cart() {
   const { cart } = useCart();
 
   return (

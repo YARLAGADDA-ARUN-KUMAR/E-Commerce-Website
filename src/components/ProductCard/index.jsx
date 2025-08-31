@@ -1,5 +1,4 @@
-import { lazy } from "react";
-import { useCart } from "../../context/cartContext";
+import { useCart } from "../../hooks/useCart";
 import { findItemInCart } from "../../utils/findItemInCart";
 import { findItemInWhishlist } from "../../utils/findItemInWhislist";
 
