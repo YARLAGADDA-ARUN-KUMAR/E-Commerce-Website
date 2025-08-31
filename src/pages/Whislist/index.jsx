@@ -1,7 +1,7 @@
-import { useCart } from "../../context/cartContext";
+import { useCart } from "../../hooks/useCart";
 import { ProductCard, Navbar } from "../../components/index"
 
-export const Whislist = () => {
+export default function Whislist() {
   const { fav } = useCart();
 
   return (

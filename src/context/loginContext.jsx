@@ -1,7 +1,6 @@
-import { createContext, useContext, useReducer, useEffect } from "react";
+import { useReducer, useEffect } from "react";
 import { loginReducer } from "../reducers/loginReducer";
-
-const loginContext = createContext();
+import { LoginContext } from "./contexts";
 
 export const LoginProvider = ({ children }) => {
   const initialToken = localStorage.getItem("login_token") || "";
@@ -23,10 +22,8 @@ export const LoginProvider = ({ children }) => {
 
 
   return (
-    <loginContext.Provider value={{ email, password, token, loginDispatch }}>
+    <LoginContext.Provider value={{ email, password, token, loginDispatch }}>
       {children}
-    </loginContext.Provider>
+    </LoginContext.Provider>
   );
 };
-
-export const useLogin = () => useContext(loginContext);

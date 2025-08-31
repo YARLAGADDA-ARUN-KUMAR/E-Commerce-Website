@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useLogin } from "../../context/loginContext";
-import { useCart } from "../../context/cartContext";
+import { useLogin } from "../../hooks/useLogin";
+import { useCart } from "../../hooks/useCart";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const Navbar = () => {

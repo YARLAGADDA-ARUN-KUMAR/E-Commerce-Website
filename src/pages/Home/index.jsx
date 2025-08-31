@@ -1,9 +1,9 @@
 import { Navbar,ProductCard } from "../../components/index";
-import { getAllProducts } from "../../api/getAllProducts";
+import { getAllProducts } from "../../api/GetAllProducts";
 import { getAllCategories } from "../../api/getAllcategories";
 import { useEffect, useState } from "react";
 
-export const Home = () => {
+export default function Home() {
   const [products, setProducts] = useState([]);
   const [originalProducts, setOriginalProducts] = useState([]); // State for the master list
   const [categories, setCategories] = useState([]);

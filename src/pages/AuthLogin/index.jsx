@@ -1,6 +1,6 @@
 import { LoginForm, Navbar } from "../../components/index";
 
-export const AuthLogin = () => {
+export default function AuthLogin() {
     return (
         <div>
             <Navbar />

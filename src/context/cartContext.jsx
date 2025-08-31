@@ -1,7 +1,6 @@
-import { createContext, useContext, useReducer, useEffect } from "react";
+import { useReducer, useEffect } from "react";
 import { cartReducer } from "../reducers/cartReducer";
-
-const cartContext = createContext();
+import { CartContext } from "./contexts";
 
 const getInitialData = (key) => {
   try {
@@ -32,10 +31,8 @@ export const CartProvider = ({ children }) => {
 
 
   return (
-    <cartContext.Provider value={{ cart, fav, cartDispatch }}>
+    <CartContext.Provider value={{ cart, fav, cartDispatch }}>
       {children}
-    </cartContext.Provider>
+    </CartContext.Provider>
   );
 };
-
-export const useCart = () => useContext(cartContext);
